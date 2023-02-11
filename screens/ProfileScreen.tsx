@@ -7,7 +7,7 @@ import MasonryList from "../components/MasonryList";
 import { Text, View } from "../components/Themed";
 
 export default function ProfileScreen() {
-  const ProfileImage = '../assets/images/Forprofile.jpg';
+  const ProfileImg = "https://images.unsplash.com/photo-1671363690138-a5a03675f559?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=381&q=80"
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
@@ -23,7 +23,8 @@ export default function ProfileScreen() {
 
         <Image
           source={{
-            uri: "../assets/images/Forprofile.jpg",
+            uri: ProfileImg,
+            // uri: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png",
           }}
           style={styles.image}
         />
